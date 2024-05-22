@@ -54,7 +54,7 @@ variable subnet_id {
 variable vm_user {
   description = "(Required) Specifies the username of the virtual machine"
   type        = string
-  default     = "azadmin"
+  default     = "erezs"
 }
 
 variable "boot_diagnostics_storage_account" {

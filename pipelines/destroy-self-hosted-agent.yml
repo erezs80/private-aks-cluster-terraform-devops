@@ -8,7 +8,7 @@ variables:
 - name: azureSubscription
   value: AzureSubscription
 - name: terraformVersion
-  value: 1.0.7
+  value: 1.8.3
 - name: terraformPath
   value: agent
 - name: tfstatePath
@@ -16,7 +16,7 @@ variables:
 - name: environment
   value: production
 - name: resourceGroupName
-  value: BabosbirdRG
+  value: ErezsTestRG
 - name: containerName
   value: scripts
 - name: scriptPath

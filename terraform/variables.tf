@@ -1,6 +1,6 @@
 variable "log_analytics_workspace_name" {
   description = "Specifies the name of the log analytics workspace"
-  default     = "BaboAksWorkspace"
+  default     = "ErezsTestWorkspace"
   type        = string
 }
 
@@ -23,13 +23,13 @@ variable "solution_plan_map" {
 
 variable "location" {
   description = "Specifies the location for the resource group and all the resources"
-  default     = "northeurope"
+  default     = "westeurope"
   type        = string
 }
 
 variable "resource_group_name" {
   description = "Specifies the resource group name"
-  default     = "BaboRG"
+  default     = "ErezsTestRG"
   type        = string
 }
 
@@ -83,7 +83,7 @@ variable "vm_subnet_address_prefix" {
 
 variable "aks_cluster_name" {
   description = "(Required) Specifies the name of the AKS cluster."
-  default     = "BaboAks"
+  default     = "ErezsTestAks"
   type        = string
 }
 
@@ -129,13 +129,13 @@ variable "sku_tier" {
 
 variable "kubernetes_version" {
   description = "Specifies the AKS Kubernetes version"
-  default     = "1.21.1"
+  default     = "1.29"
   type        = string
 }
 
 variable "default_node_pool_vm_size" {
   description = "Specifies the vm size of the default node pool"
-  default     = "Standard_F8s_v2"
+  default     = "Standard_D4s_v5"
   type        = string
 }
 
@@ -238,7 +238,7 @@ variable "default_node_pool_os_disk_type" {
 variable "default_node_pool_max_count" {
   description = "(Required) The maximum number of nodes which should exist within this Node Pool. Valid values are between 0 and 1000 and must be greater than or equal to min_count."
   type          = number
-  default       = 10
+  default       = 5
 }
 
 variable "default_node_pool_min_count" {
@@ -274,7 +274,7 @@ variable "additional_node_pool_name" {
 variable "additional_node_pool_vm_size" {
   description = "(Required) The SKU which should be used for the Virtual Machines used in this Node Pool. Changing this forces a new resource to be created."
   type        = string
-  default     = "Standard_F8s_v2"
+  default     = "Standard_D4s_v5"
 }
 
 variable "additional_node_pool_availability_zones" {
@@ -363,13 +363,13 @@ variable "additional_node_pool_node_count" {
 
 variable "domain_name_label" {
   description = "Specifies the domain name for the jumbox virtual machine"
-  default     = "babotestvm"
+  default     = "ErezsTesttestvm"
   type        = string
 }
 
 variable "firewall_name" {
   description = "Specifies the name of the Azure Firewall"
-  default     = "BaboFirewall"
+  default     = "ErezsTestFirewall"
   type        = string
 }
 
@@ -414,7 +414,7 @@ variable "firewall_zones" {
 
 variable "vm_name" {
   description = "Specifies the name of the jumpbox virtual machine"
-  default     = "TestVm"
+  default     = "ErezsTestVm"
   type        = string
 }
 
@@ -426,7 +426,7 @@ variable "vm_public_ip" {
 
 variable "vm_size" {
   description = "Specifies the size of the jumpbox virtual machine"
-  default     = "Standard_DS1_v2"
+  default     = "Standard_D2s_v5"
   type        = string
 }
 
@@ -477,7 +477,7 @@ variable "storage_account_tier" {
 variable "acr_name" {
   description = "Specifies the name of the container registry"
   type        = string
-  default     = "BaboAcr"
+  default     = "ErezsTestAcr"
 }
 
 variable "acr_sku" {
@@ -512,7 +512,7 @@ variable "tags" {
 
 variable "bastion_host_name" {
   description = "(Optional) Specifies the name of the bastion host"
-  default     = "BaboBastionHost"
+  default     = "ErezsTestBastionHost"
   type        = string
 }
 
@@ -530,7 +530,7 @@ variable "storage_account_replication_type" {
 variable "key_vault_name" {
   description = "Specifies the name of the key vault."
   type        = string
-  default     = "BaboAksKeyVault"
+  default     = "ErezsTestAksKeyVault"
 }
 
 variable "key_vault_sku_name" {
@@ -605,7 +605,7 @@ variable "key_vault_default_action" {
 variable "admin_username" {
   description = "(Required) Specifies the admin username of the jumpbox virtual machine and AKS worker nodes."
   type        = string
-  default     = "azadmin"
+  default     = "erezs"
 }
 
 variable "ssh_public_key" {

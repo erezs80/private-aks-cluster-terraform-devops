@@ -24,8 +24,6 @@ variables:
   value: latest
 - name: chartName
   value: syntheticapi
-- name: HELM_EXPERIMENTAL_OCI
-  value: 1
 
 stages :
 - stage: create_container_image

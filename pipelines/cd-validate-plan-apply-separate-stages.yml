@@ -8,7 +8,7 @@ variables:
 - name: azureSubscription
   value: AzureSubscription
 - name: terraformVersion
-  value: 1.0.7
+  value: 1.8.3
 - name: terraformPath
   value: terraform
 - name: tfstatePath
@@ -16,17 +16,17 @@ variables:
 - name: environment
   value: production
 - name: prefix
-  value: Babosbird
+  value: ErezsTest
 - name: location
   value: westeurope
 - name: kubernetesVersion
-  value: '1.21.2'
+  value: '1.29'
 - name: resourceGroupName
   value: '$(prefix)RG'
 - name: aksClusterName
   value: '$(prefix)Aks'
 - name: logAnalyticsWorkspaceName
-  value: '$(prefix)AksWorkspace'
+  value: '$(prefix)Workspace'
 - name: domainNameLabel
   value: '$(prefix)testvm'
 - name: firewallName

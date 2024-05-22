@@ -8,7 +8,7 @@ variables:
 - name: azureSubscription
   value: AzureSubscription
 - name: terraformVersion
-  value: 1.0.7
+  value: 1.8.3
 - name: terraformPath
   value: terraform
 - name: tfstatePath

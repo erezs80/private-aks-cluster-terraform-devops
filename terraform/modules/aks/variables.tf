@@ -77,7 +77,7 @@ variable "kubernetes_version" {
 
 variable "default_node_pool_vm_size" {
   description = "Specifies the vm size of the default node pool"
-  default     = "Standard_F8s_v2"
+  default     = "Standard_D4s_v5"
   type        = string
 }
 
@@ -253,7 +253,7 @@ variable "ingress_application_gateway" {
 variable "admin_username" {
   description = "(Required) Specifies the Admin Username for the AKS cluster worker nodes. Changing this forces a new resource to be created."
   type        = string
-  default     = "azadmin"
+  default     = "erezs"
 }
 
 variable "ssh_public_key" {

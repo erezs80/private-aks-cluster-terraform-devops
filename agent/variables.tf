@@ -1,12 +1,12 @@
 variable "log_analytics_workspace_name" {
   description = "Specifies the name of the log analytics workspace"
-  default     = "BaboAksWorkspace"
+  default     = "ErezsTestWorkspace"
   type        = string
 }
 
 variable "log_analytics_resource_group_name" {
   description = "Specifies the name of the log analytics resource group"
-  default     = "BaboAksWorkspace"
+  default     = "ErezsTestWorkspace"
   type        = string
 }
 
@@ -39,7 +39,7 @@ variable "location" {
 
 variable "resource_group_name" {
   description = "Specifies the resource group name"
-  default     = "BaboRG"
+  default     = "ErezsTestRG"
   type        = string
 }
 
@@ -93,7 +93,7 @@ variable "tags" {
 variable "admin_username" {
   description = "(Required) Specifies the admin username of the self-hosted agent virtual machine and AKS worker nodes."
   type        = string
-  default     = "azadmin"
+  default     = "erezs"
 }
 
 variable "ssh_public_key" {

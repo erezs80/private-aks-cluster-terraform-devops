@@ -8,21 +8,19 @@ variables:
 - name: azureSubscription
   value: AzureSubscription
 - name: terraformVersion
-  value: 1.0.7
+  value: 1.8.3
 - name: terraformPath
   value: terraform
 - name: tfstatePath
   value: terraform.tfstate
 - name: environment
   value: production
-- name: prefix
-  value: Babosbird
 - name: location
   value: westeurope
 - name: kubernetesVersion
-  value: '1.21.2'
+  value: '1.29'
 - name: resourceGroupName
-  value: BabosbirdRG
+  value: ErezsTestRG
 - name: containerName
   value: scripts
 - name: scriptPath
