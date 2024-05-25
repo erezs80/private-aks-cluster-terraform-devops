@@ -8,9 +8,9 @@ location="WestEurope"
 storageAccountName="erezsterraformstate"
 storageAccountResourceGroupName="StorageAccountsRG"
 containerName="tfstate"
-sshPublicKey="ssh-rsa XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-azureDevOpsUrl="https://dev.azure.com/contoso"
-azureDevOpsPat="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+sshPublicKey="ssh-rsa xxxxxxxxxxxxx"
+azureDevOpsUrl="https://dev.azure.com/erezs80"
+azureDevOpsPat="xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 azureDevOpsAgentPoolName="Terraform"
 subscriptionName=$(az account show --query name --output tsv)
 

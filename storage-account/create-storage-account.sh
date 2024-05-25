@@ -10,7 +10,7 @@ subscriptionName=$(az account show --query name --output tsv)
 
 # Create resource group
 echo "Checking if [$resourceGroupName] resource group actually exists in the [$subscriptionName] subscription..."
-az group show --name $resourceGroupName &>/dev/null
+az group show --name $resourceGroupName
 
 if [[ $? != 0 ]]; then
     echo "No [$resourceGroupName] resource group actually exists in the [$subscriptionName] subscription"
@@ -33,7 +33,7 @@ fi
 
 # Create storage account
 echo "Checking if [$storageAccountName] storage account actually exists in the [$subscriptionName] subscription..."
-az storage account --name $storageAccountName &>/dev/null
+az storage account --name $storageAccountName
 
 if [[ $? != 0 ]]; then
     echo "No [$storageAccountName] storage account actually exists in the [$subscriptionName] subscription"
@@ -72,7 +72,7 @@ echo "Checking if [$containerName] container actually exists in the [$storageAcc
 az storage container show \
     --name $containerName \
     --account-name $storageAccountName \
-    --account-key $storageAccountKey &>/dev/null
+    --account-key $storageAccountKey
 
 if [[ $? != 0 ]]; then
     echo "No [$containerName] container actually exists in the [$storageAccountName] storage account"
