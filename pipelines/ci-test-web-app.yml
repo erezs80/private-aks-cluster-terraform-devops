@@ -13,7 +13,7 @@ pool: Terraform
 variables:
 - group: global-variables
 - name: azureSubscription
-  value: AzureSubscription
+  value: "Erezs Test Subscription"
 - name: sourcePath
   value: source
 - name: helmChartPath

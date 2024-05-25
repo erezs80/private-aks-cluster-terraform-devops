@@ -173,8 +173,8 @@ module "aks_cluster" {
   default_node_pool_vm_size                = var.default_node_pool_vm_size
   vnet_subnet_id                           = module.aks_network.subnet_ids[var.default_node_pool_subnet_name]
   default_node_pool_availability_zones     = var.default_node_pool_availability_zones
-  default_node_pool_node_labels            = var.default_node_pool_node_labels
-  default_node_pool_node_taints            = var.default_node_pool_node_taints
+  default_node_pool_node_labels            = var.system_node_pool_node_labels
+  default_node_pool_node_taints            = var.system_node_pool_node_taints
   default_node_pool_enable_auto_scaling    = var.default_node_pool_enable_auto_scaling
   default_node_pool_enable_host_encryption = var.default_node_pool_enable_host_encryption
   default_node_pool_enable_node_public_ip  = var.default_node_pool_enable_node_public_ip

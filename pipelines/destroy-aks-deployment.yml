@@ -6,7 +6,7 @@ pr: none
 variables:
 - group: global-variables
 - name: azureSubscription
-  value: AzureSubscription
+  value: "Erezs Test Subscription""
 - name: terraformVersion
   value: 1.8.3
 - name: terraformPath
