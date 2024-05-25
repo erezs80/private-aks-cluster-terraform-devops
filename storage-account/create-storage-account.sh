@@ -2,7 +2,7 @@
 
 #Variables
 resourceGroupName="StorageAccountsRG"
-storageAccountName="baboterraform"
+storageAccountName="erezsterraformstate"
 containerName="tfstate"
 location="WestEurope"
 sku="Standard_LRS"

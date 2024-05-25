@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Variables
-keyVaultName="KEY_VAULT_NAME"
-keyVaultResourceGroupName="KEY_VAULT_RESOURCE_GROUP_NAME"
+keyVaultName="erezs-test-kv"
+keyVaultResourceGroupName="keyvaultsRG"
 keyVaultSku="Standard"
 location="WestEurope"
-storageAccountName="STORAGE_ACCOUNT_NAME"
-storageAccountResourceGroupName="ATORAGE_ACCOUNT_RESOURCE_GROUP_NME"
+storageAccountName="erezsterraformstate"
+storageAccountResourceGroupName="StorageAccountsRG"
 containerName="tfstate"
 sshPublicKey="ssh-rsa XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 azureDevOpsUrl="https://dev.azure.com/contoso"
