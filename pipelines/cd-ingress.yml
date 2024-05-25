@@ -41,10 +41,6 @@ variables:
   value: default
 - name: clusterIssuerName
   value: letsencrypt-nginx
-- name: workloadReleaseName
-  value: testapi
-- name: workloadNamespace
-  value: testapi
 - name: aksName
   value: ErezsTestAks
 - name: resourceGroupName
@@ -343,9 +339,7 @@ stages :
 
                 # Create prefix
                 s1=$(aksName)
-                s2=$(workloadNamespace)
-                s3=$(workloadReleaseName)
-                prefix="${s1^}_${s2^}_${s3^}"
+                prefix="${s1^}_ingress_controller"
 
                 # Create public IP address
                 firewallPublicIpName="${prefix}_PublicIp"
@@ -366,7 +360,7 @@ stages :
                     --sku Standard \
                     --allocation-method Static \
                     --zone 1 2 3 \
-                    --tags serviceName=$(workloadReleaseName) namespace=$(namespace) cluster=$(aksName) 1>/dev/null
+                    --tags serviceName="ingress-controller" namespace=$(namespace) cluster=$(aksName) 1>/dev/null
 
                   if [[ $? == 0 ]]; then
                     echo "[$firewallPublicIpName] public IP successfully created in the [$(publicIpAddressResourceGroupName)] resource group"
